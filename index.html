@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body style="text-align: center">  
+    <form id="user-form" method="post">
+    <div style="
+        border-radius: 80px;
+        border: 60px solid transparent;
+        margin-left: 550px;
+        margin-right: 550px;
+        background: linear-gradient(45deg,rgb(222, 74, 89),rgb(143, 7, 7))">
+      <h1 style="text-decoration: underline; color: beige;"/>Application Form</h1>
+
+      <li ><label for="text";>Name: </label>
+      <input required type="text" id="name" name="name" style="border-radius: 7px; height: 20px;"></li>
+      <p></p>
+        <li><label for="email">Email: </label>
+      <input required type="email" id="email" name="email"  style="border-radius: 7px; height: 20px;"></li>
+      <p></p>
+        <li><label required for="password">Password: </label>
+      <input required type="password" id="password" name="password"  style="border-radius: 7px; height: 20px;"></li>
+      <p></p>
+        <li><label for="dob">Date of Birth: </label>
+      <input type="date" id="dob" name="dob"  style="border-radius: 7px; height: 20px;"></li>
+      <p></p>
+      <label for="acceptTerms">Accept Terms & Conditions</label>
+      <input type="checkbox" name="acceptTerms" id="acceptTerms" style="border-radius: 5px;" >
+      <p></p>
+      <button required class="button" type="submit" style="--x: 50%;
+      --y: 50%;
+      position: relative;
+      appearance: none;
+      padding: 1em 2em;
+      color: white;
+      cursor: pointer;
+      outline: none;
+      border-radius: 6px;
+  
+  
+      border: 2px solid transparent;
+      background: linear-gradient(#0c0b0a, #0f0d09) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box; color: rgb(255, 255, 255);
+  ">Submit</button>
+      <p></p>
+    </div>
+  </form>
+  <div class="relative bg-white px-4 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10 ">
+    <div class="mx-auto">
+        <h2 class="text-xl text-center font-bold leadin-right">Entries</h2>
+        <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+    </div>
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
